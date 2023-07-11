@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form with SQL</title>
+</head>
+
+<body>
+    <h2>Login Form here..</h2>
+    <form method="post" action="myservlet/userForm" enctype="multipart/form-data">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+        <select id="gender" name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <a href="myservlet/userForm?show=true">Show Data</a>
+    <br><br>
+    <!-- Display Data -->
+    <h2>Stored Data:</h2>
+    {{#if data}}
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Gender</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+            <tr>
+                <td>{{this.username}}</td>
+                <td>{{this.password}}</td>
+                <td>{{this.gender}}</td>
+                <td>
+                    <img src="data:image/jpg;base64,{{this.image}}" alt="User Image">
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{else}}
+    <p>No data available.</p>
+    {{/if}}
+
+    <br>
+    <h2>Login Here:</h2>
+    <form>
+        <input type="button" value="Login Here" onclick="location.href='Login.html'">
+    </form>
+</body>
+
+</html>
