@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page for the User</title>
+</head>
+<body>
+    <h3>Your Login Page is connected..</h3>
+    <form method="post" action="/demo/verifyLogin/Loginform" enctype="multipart/form-data">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image" required><br>
+        <input type="submit" value="Login">
+
+    </form>
+    <h3>Want to Move to the Previous Page</h3>
+    <input type="button" value="Back" onclick="location.href='index.html'">
+</body>
+</html>
