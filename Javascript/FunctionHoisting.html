@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Hoisting</title>
+</head>
+<body>
+     <p id="demo"></p> 
+    <!-- <button type="button" onclick="">Click here</button> -->
+    <script>
+        myFunction(6);  //we are declaring the function call on the top of scope called as Function Hoisting..
+
+        function myFunction(a){ //this is the function which we have performed..
+            document.getElementById("demo") .innerHTML = a * a;
+        }
+        
+    </script>
+    
+</body>
+</html>

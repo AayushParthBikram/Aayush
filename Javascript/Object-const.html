@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Getters and Setters</h2>
+
+<p>Perfect for creating counters:</p>
+
+<p id="demo"></p>
+
+<script>
+    function Person(first,last,age,eye){ //Javascript object is the King we have to Understand the Object
+        this.firstName = first;
+        this.lastName = last;  //In javascript Everything is played with the object so Important to understad..
+        this.age = age;
+        this.eyeColor = eye;
+        this.nationality = "Nepalese";
+        this.changeName = function(name){
+          this.lastName = name;
+        };
+        //Here Curly braces we are using which create the format of the object..
+        //function Person is actually created the object constructor ..
+    }
+
+    
+    const me = new Person("Aayush" ,"parthJha", 22, "Blue"); //here we are calling our constructor..
+    me.changeName("parthBikram"); //This add the particular attributes to our object ocnstructor..s
+
+
+
+
+document.getElementById("demo").innerHTML = "<h3> My last Name is : " + me.lastName;
+</script>
+
+</body>
+</html>
