@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Function</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button type="button" onclick="myFunction()">Click Me !!</button>
+
+    <script>
+        let text = "";
+        function myFunction(){ //function keyword is used here to create the Function in Javascript..
+            let age = prompt("Enter Your respective age .."); //A dialog box is appeared where the User can input their age..
+
+            if(age > 18){ // We are here also using  the If-else condition to implement..
+                 text = "You are Eligible to cast the vote..";
+            }
+            else{
+                text = "You are Ineligible to cast the vote.."
+            }
+
+            document.getElementById("demo").innerHTML = text;
+
+            // we can also use the function as the expression like this const x = function(a,b) {return a + b};
+
+        }
+    </script>
+    
+</body>
+</html>
