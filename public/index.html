@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Event Management</h1>
+    <div class="container">
+        <!-- I'm creating the form here which is used to fill up the details for the Event Organized by the institution,school  -->
+        <form id="eventForm">
+            <!-- For this I created here different form group to fill up different details for the event management -->
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+                <div class="error" id="titleError"></div> 
+                <!-- This error class div has been made for the Validation that we are doing when filling the details in the form and after verifying the same we are dealing with Event management console. -->
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" required></textarea>
+                <div class="error" id="descriptionError"></div>
+            </div>
+            <div class="form-group">
+                <label for="totalParticipants">Total Participants</label>
+                <input type="number" id="totalParticipants" name="totalParticipants" required>
+                <div class="error" id="participantsError"></div>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" name="startDate" required>
+                <div class="error" id="startDateError"></div>
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" name="endDate" required>
+                <div class="error" id="endDateError"></div>
+            </div>
+            <button type="submit">Create Event</button>
+        </form>
+        <a href="events.html">View All the events</a> 
+        <!-- This list out all the events that has been stored in the Event.json file coming from the user's request. -->
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
