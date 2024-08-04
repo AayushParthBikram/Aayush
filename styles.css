@@ -1,0 +1,154 @@
+/* Add this CSS to your styles.css file or within a <style> tag in your HTML file */
+.navbar {
+    background-color: #343a40; /* Change the background color of the navbar */
+}
+
+.navbar-brand {
+    color: #fff !important; /* Change the color of the brand text to white */
+    font-size: 24px; /* Adjust the font size */
+}
+
+.nav-link {
+    color: #fff !important; /* Change the color of the navigation links to white */
+    margin-right: 20px; /* Add some spacing between the links */
+    transition: color 0.2s ease-in-out; /* Add a smooth color transition on hover */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change the link color on hover */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Change the color of the navbar toggler icon */
+}
+
+/* Center the brand logo and text */
+.navbar-brand img {
+    vertical-align: middle;
+    margin-right: 10px; /* Add spacing between the logo and text */
+}
+
+/* Center the navigation links horizontally */
+.navbar-nav {
+    margin: 0 auto;
+}
+
+/* Center the toggle button on mobile */
+.navbar-toggler {
+    text-align: center;
+}
+
+
+
+/* Add this CSS to styles.css or in a <style> tag within your HTML file */
+/* .card {
+    border: none; 
+    transition: transform 0.2s ease-in-out; 
+} */
+
+/* .card:hover {
+    transform: scale(1.05); 
+} */
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-img-top {
+    height: 200px; /* Set the image height */
+    object-fit: cover; /* Maintain image aspect ratio */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Change the primary button color */
+    border-color: #007bff;
+    padding: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Change the button color on hover */
+    border-color: #0056b3;
+}
+
+
+
+
+
+#quizContainer {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  #quizContainer > div {
+    margin-bottom: 20px;
+  }
+  
+  p.question {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #575656;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #2d2d2d;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  p.answer {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  div.show-answer p.answer {
+    display: block;
+    color: #28a745;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #quizContainer {
+        padding: 10px;
+    }
+  
+    button {
+        width: 100%;
+    }
+  }
+  
+  
+  .custom-active-link {
+    background-color: #575656; /* Change this to your desired background color */
+    color: #fff; /* Change this to your desired text color */
+    border-radius: 5px;
+}  
+
+

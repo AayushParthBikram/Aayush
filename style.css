@@ -1,0 +1,109 @@
+/* Reset some default styles */
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background image for the body */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #000000;
+    color: #fff;
+    border-bottom: 4px solid rgb(69, 69, 69);
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    color: linear-gradient(to right,red, #ff00e1, #000dff);
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 20px;
+	border: 4px solid;
+	border-image: linear-gradient(to right,red, #ff00d9, #000dff);
+    border-image-slice: 1;
+}
+
+/* Style the section */
+.section {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+/* Center align the title */
+.title {
+    text-align: center;
+    color:linear-gradient(to right,red, #ff00e1, #000dff);
+}
+
+/* Style the content */
+.content {
+    text-align: left;
+    padding: 20px;
+    color: #555;
+}
+
+.button a {
+    display: inline-block;
+    background-color: #343434;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    /* Gradient border */
+    border: 4px solid;
+    border-image: linear-gradient(to right,red, #ff00e1, #000dff);
+    border-image-slice: 1;
+}
+
+.button a:hover {
+    background-color: #262626;
+}
+
+/* Style the social icons */
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social a {
+    color: #ff6600;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #ff3300;
+}
+
+/* Style the image */
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
